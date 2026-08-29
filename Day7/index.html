@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: skyblue;
+            width: 330px;
+            height: 300px;
+            text-align: center;
+            border: 1px solid black;
+            /* border:2px dotted red;
+            border :2px dashed red;
+            border:4px double orange; */
+
+            /*It gives curve edges */
+            border-radius: 25px;
+            /* Gap b/w 2 boxes*/
+            margin: 15px;
+            /*increase Size*/
+            padding: 20px;
+            /*when margin in auto then the boxes comes in middle and it not gives any spaces*/
+            /* margin: auto; */
+
+/* box-sizing: content-box;it will include width + padding +margin + border */
+
+box-sizing: border-box;/*it makes boxes in original size */
+        
+        }
+        p{
+            border-bottom:1px double red;/* it will do border line under the content*/
+            padding-bottom :10px;/* Gap b/w line and content*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Things👻</p>
+    </div>
+    <div class="box">
+        <p>Books📚</p>
+    </div>
+    
+</body>
+</html>
