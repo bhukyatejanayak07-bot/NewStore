@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;/*doesn't consider margin padding*/
+
+        }
+        nav{
+            background-color: #1f1f21;
+            /*every thing is touching of the boders of font*/
+          
+            padding: p20x 50px;
+            display: flex;/*arrange side by side*/
+            justify-content: space-between;/*space b/w the content left side and right side*/
+            align-items: center;
+
+        }
+        h2{
+            color:white;
+        }
+       .menu{
+       display: flex;
+       gap:30px;
+    }
+    a{
+        color: whitesmoke;
+        text-decoration: none;/* it removes underline*/
+
+    }
+    a:hover{
+        color: rgb(255, 221, 0);
+
+        transition: 0.5s;;
+
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Code Acadamy</h2>
+        <div class="menu">
+            <a href="#menu">Home</a>
+              <a href="#menu">courses</a>
+                <a href="#menu">Project</a>
+                  <a href="#menu">Login</a>
+        </div>
+    </nav>
+</body>
+</html>

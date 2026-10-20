@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // functions
+        function greeting(name){
+            console.log(`Good morning ${name} `)
+        }
+        greeting("teja nayak")
+        function greet(name){
+            console.log(`All are welcome ${name}`)
+        }
+        greet(undefined)
+        function price(price,time,rate){
+            let money=(price*time*rate)/100
+            console.log(`Total price is : ${money+price} \n Intrest :${money}`)
+
+        }
+        price(100000,12,2)
+
+
+
+function maark(num1,num2){
+    return num1*num2
+}
+let result=maark(5,4)
+console.log(`result is ${result}`)
+let abc=()=>{
+    console.log("hello guys i'm arrow function")
+}
+abc()//calling function
+
+    </script>
+</body>
+</html>

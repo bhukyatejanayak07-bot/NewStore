@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch('https://randomuser.me/api')
+//1. successfull
+// .then(Response=>console.log(Response))
+
+
+     
+        
+        // chainging to JSon Formar
+        .then(Response=>Response.json())
+        .then(data=>console.log(data.info))
+
+
+        //2.unsuccessfull
+        .catch(function(error){
+            console.log('Error Conection',error)
+
+        })
+
+    </script>
+</body>
+</html>

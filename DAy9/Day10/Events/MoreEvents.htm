@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input placeholder="search" id="Myinput">
+    <! <div id="abc" style="height:200px; width:200px; background-color: rgb(12, 131, 235);"></div> -->
+    <!-- <button type="submit">Submit</button>
+    <script>
+
+const input=document.getElementById("Myinput")
+const box=document.getElementById("abc")
+
+        //key up -->
+        // input.addEventListener('keyup',function(y){
+        //     console.log('key pressed',y.key)
+            
+        // })
+        // //key Down
+        // input.addEventListener('keydown',function(x){
+        //     console.log('key pressed',x.key)
+        // })
+        // input.addEventListener('change',function(y){
+        //     console.log('value of Input',y.target.value)
+        // })
+
+        // // output- value of Input "......"
+        // box.addEventListener('mouseover',function(){
+        //     box.style.backgroundColor="red"
+
+        // })
+        //  box.addEventListener('mouseout',function(){
+        //     box.style.backgroundColor="black"
+
+        // })
+        input.addEventListener('submit',function(x){
+            x.preventDefault();
+           let name=document.getElementById("Myinput")
+           if(name ===""){ 
+            alert("Name is required")
+           }else{alert("form is submitted succesfully")
+
+            }
+           
+        })--!>
+
+
+
+
+<!-- 
+            how to submit form -->
+
+
+        <form id="myForm">
+    <input type="text" id="name" placeholder="Enter Name">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Stops form submission
+
+    let name = document.getElementById("name").value;
+
+    if (name === "") {
+        alert("Name is required!");
+    } else {
+        alert("Form submitted successfully!");
+    }
+});
+</script>
+
+
+
+    </script>
+     
+</body>
+</html>

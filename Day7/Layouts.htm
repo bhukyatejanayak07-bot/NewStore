@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:1px solid black ;
+            width :100px;
+            height:100px;
+            background-color: red;
+            color:white;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px black;
+          
+            
+        }
+        .product{
+            display: flex/*row wise dixn*/;
+            /* flex-direction: row-reverse;reverse order of products on row wise */
+justify-content:center;
+            background-color: aqua;
+            height:500px;
+            gap: 20px;
+            align-items: center;/*top to buttom*/
+            flex-wrap: wrap;/*Don't want to change my website products*/
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="box">cookies</div>
+        <div class="box">pastry</div>
+        <div  class="box">chocos</div>
+    </div>
+</body>
+</html>

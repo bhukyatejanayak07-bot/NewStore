@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function Project(subject,callback){
+            console.log(`${subject} homework is doing...! `)
+            callback()
+        }
+       
+     Project("Maths",function(){
+            console.log(`Home work was done!.`)
+        })
+        -->
+        <script>
+        //   
+        function FoodOrder(name,callback){
+            console.log("ordering your food "+name)//1
+            callback("biryani",function(){
+                console.log("out of delivery")
+            })//3
+          
+        }
+        FoodOrder("biryani",function(name2,callback){
+  console.log("ordered your food ",name2)//2)
+  callback()
+        })          
+            
+        
+       
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="coffee" height="300px" width="300px"><br>
+    <button id="btn" onclick="getImg()">Get</button>
+    <script>
+        // function getImg(){
+        //     const CatImg=document.getElementById("Cat")
+        //     fetch('https://api.thecatapi.com/v1/images/search')
+        //     .then(respo=>respo.json())
+        //     // .then(data=>console.log(data))
+        //     .then(data=>CatImg.src=data[0].url)
+
+
+        //     .catch(err=>console.log('error image',err))
+        // }
+function getImg(){
+    const Img=document.getElementById("coffee")
+    fetch('https://coffee.alexflipnote.dev/random.json')
+    .then(respo=>respo.json())
+    .then(data=>Img.src=data.file)
+    .catch(err=>console.log('error in img :',err))
+    // Img.src="https://coffee.alexflipnote.dev/random.json";
+}
+    </script>
+</body>
+</html>
